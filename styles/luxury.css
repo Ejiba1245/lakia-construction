@@ -1,0 +1,46 @@
+.luxury-background {
+    background-color: #0A0A0A; /* Rich black for elegance */
+}
+
+.luxury-text {
+    color: #FFD700; /* Gold for a premium feel */
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.luxury-button {
+    background-color: #DAA520; /* Goldenrod for buttons */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.luxury-button:hover {
+    background-color: #FFD700;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .luxury-button {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+/* Animation for elements */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
