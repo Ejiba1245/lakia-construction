@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakia Construction Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        /* Dark mode toggle specific styles */
+        .dark-mode {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        /* Luxury color palette */
+        .luxury-black { background-color: black; }
+        .luxury-white { background-color: white; }
+        .luxury-gold { color: gold; }
+        .luxury-dark-gray { background-color: #333; }
+        .luxury-orange { color: orange; }
+    </style>
+</head>
+<body class="luxury-white">
+    <div id="app" class="min-h-screen flex flex-col">
+        <!-- Navigation -->
+        <nav class="flex justify-between items-center p-5 bg-white shadow-md">
+            <div class="text-2xl font-bold luxury-black">Lakia Construction</div>
+            <div>
+                <button id="darkModeToggle" class="luxury-black p-2 rounded">Toggle Dark Mode</button>
+            </div>
+        </nav>
+
+        <!-- Hero section -->
+        <header class="hero h-screen bg-luxury-black text-white flex items-center justify-center">
+            <h1 class="text-5xl font-bold">Building Your Dreams</h1>
+        </header>
+
+        <!-- About section -->
+        <section class="about p-10 bg-luxury-dark-gray text-white">
+            <h2 class="text-3xl font-semibold mb-5">About Us</h2>
+            <p>Lakia Construction is committed to providing exceptional building services with a focus on quality and customer satisfaction.</p>
+        </section>
+
+        <!-- Services section -->
+        <section class="services p-10 bg-gray-100 text-black">
+            <h2 class="text-3xl font-semibold mb-5">Our Services</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Residential Construction</li>
+                <li>Commercial Construction</li>
+                <li>Renovations</li>
+                <li>Project Management</li>
+            </ul>
+        </section>
+
+        <!-- Projects section -->
+        <section class="projects p-10 bg-luxury-black text-white">
+            <h2 class="text-3xl font-semibold mb-5">Our Projects</h2>
+            <p>Check out some of our latest projects.</p>
+            <!-- Gallery or Project Images would go here -->
+        </section>
+
+        <!-- Testimonials section -->
+        <section class="testimonials p-10 bg-gray-100 text-black">
+            <h2 class="text-3xl font-semibold mb-5">Testimonials</h2>
+            <p>"Lakia Construction did an incredible job on our home!" - John Doe</p>
+        </section>
+
+        <!-- Contact section -->
+        <section class="contact p-10 bg-luxury-dark-gray text-white">
+            <h2 class="text-3xl font-semibold mb-5">Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" class="border p-2 mb-4 w-full" required />
+                <input type="email" placeholder="Your Email" class="border p-2 mb-4 w-full" required />
+                <textarea placeholder="Your Message" class="border p-2 mb-4 w-full" required></textarea>
+                <button type="submit" class="bg-luxury-gold text-black p-2">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Footer section -->
+        <footer class="p-5 bg-luxury-black text-white text-center">
+            <p>&copy; 2026 Lakia Construction. All rights reserved.</p>
+            <a href="https://wa.me/11234567890" class="text-luxury-orange" target="_blank">WhatsApp Us</a>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('darkModeToggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
